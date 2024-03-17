@@ -662,19 +662,19 @@ video {
 }
 
 .bg-\[url\(\'\/images\/aquagalaxy\.gif\'\)\] {
-  background-image: url('/images/aquagalaxy.gif');
+  background-image: url('/soniclobster/images/aquagalaxy.gif');
 }
 
 .bg-\[url\(\'\/images\/cyberscape\.gif\'\)\] {
-  background-image: url('/images/cyberscape.gif');
+  background-image: url('/soniclobster/images/cyberscape.gif');
 }
 
 .bg-\[url\(\'\/images\/header2\.png\'\)\] {
-  background-image: url('/images/header2.png');
+  background-image: url('/soniclobster/images/header2.png');
 }
 
 .bg-\[url\(\'\/images\/water\.webp\'\)\] {
-  background-image: url('/images/water.webp');
+  background-image: url('/soniclobster/images/water.webp');
 }
 
 .p-4 {
