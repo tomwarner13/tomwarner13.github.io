@@ -17,13 +17,13 @@ body {
   font-family: 'Space Mono', monospace;
   font-size: 16px;
   height: 100vh;
+  overflow: hidden;
 }
 
 main {
-  min-height: fit-content;
+  min-height: 715px;
   width: 1000px;
-  max-width: 1000px;
-  position: relative;
+  position: fixed;
   overflow: hidden;
 }
 
