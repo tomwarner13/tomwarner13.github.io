@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom Warner's Cool Website</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <div class="header"> guest@tomw: $~</div>
+    <div class="terminal" id="terminalWindow">
+      <section id="terminal">
+<pre>
+ ______   ______     __    __                                         
+/\__  _\ /\  __ \   /\ "-./  \                                        
+\/_/\ \/ \ \ \/\ \  \ \ \-./\ \                                       
+   \ \_\  \ \_____\  \ \_\ \ \_\                                      
+    \/_/   \/_____/   \/_/  \/_/                                      
+ __     __     ______     ______     __   __     ______     ______    
+/\ \  _ \ \   /\  __ \   /\  == \   /\ "-.\ \   /\  ___\   /\  == \   
+\ \ \/ ".\ \  \ \  __ \  \ \  __<   \ \ \-.  \  \ \  __\   \ \  __<   
+ \ \__/".~\_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\  \ \_\ \_\ 
+  \/_/   \/_/   \/_/\/_/   \/_/ /_/   \/_/ \/_/   \/_____/   \/_/ /_/ 
+                                                                      
+  </pre>    
+  <div class="command">guest@tomw: $~ <span class="error" id="date">Mon Aug 19 2024</span></div>
+  <div class="title">Welcome to my website!</div>
+  <span class="command">Type 'help' to list available commands, or 'chill' to disable animations.</span>
+      </section>
+      <div class="prompt">
+        <span class="command">guest@tomw:</span> <span class="title">$~</span> <input id="promptInput">
+      </div>
+    </div>
+    <div class="flicker animation"></div>
+    <div class="scanlines animation"></div>
+    <div class="noise animation"></div>
+  </main>
+  <div class="hidden" id="promptClone">
+    <span class="command">guest@tomw:</span> <span class="title">$~</span> <span class="promptCloneInput"></span>
+    <div class="promptCloneContent"></div>
+  </div>
+  <div class="hidden" id="help">
+    <div class="sectionTitle">Available commands: </div>
+    <div class="indent">
+      <div>
+        <span class="command">about</span>:
+        <div class="indent">About Me</div> 
+      </div>
+      <div>
+        <span class="command">social</span>:
+        <div class="indent">List socials</div> 
+      </div>
+      <div>
+        <span class="command">skills</span>:
+        <div class="indent">Print skills</div> 
+      </div>
+      <div>
+        <span class="command">education</span>:
+        <div class="indent">Print education (or lack thereof)</div> 
+      </div>
+      <div>
+        <span class="command">experience</span>:
+        <div class="indent">Print some experiences I've had</div> 
+      </div>
+      <div>
+        <span class="command">contact</span>:
+        <div class="indent">Print contact info</div> 
+      </div>
+      <div>
+        <span class="command">chill</span>:
+        <div class="indent">Disable animations</div> 
+      </div>
+      <div>
+        <span class="command">clear</span>:
+        <div class="indent">Clear terminal history</div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden" id="contact">
+    <div class="sectionTitle">Contact me: </div>
+    <div class="indent">
+      <span class="title">Email</span> - <a href="mailto:tomwarner13@gmail.com" target="_blank"><span class="command">tomwarner13@gmail.com</span> </a>
+    </div>
+  </div>
+
+  <div class="hidden" id="skills">
+    <div class="sectionTitle">Skills: </div>
+    <div class="indent">
+      <div>
+        <span class="command">Languages</span>:
+        <div class="indent">
+          <span class="title">C#</span><br />
+          <span class="title">JS/TS</span><br />
+          <span class="title">CSS</span><br />
+          <span class="title">HTML</span><br />
+          <span class="title">Bash</span><br />
+          <span class="title">SQL</span><br />
+        </div> 
+      </div>
+      <div>
+        <span class="command">Tools/Environments</span>:
+        <div class="indent">
+          <span class="title">Git</span><br />
+          <span class="title">Rider</span><br />
+          <span class="title">Linux</span><br />
+          <span class="title">Vim</span><br />
+        </div> 
+      </div>
+      <div>
+        <span class="command">Abstract</span>:
+        <div class="indent">
+          <span class="title">Algorithms</span><br />
+          <span class="title">Application Performance & Efficiency</span><br />
+          <span class="title">Communicating with humans of varying degrees of technical proficiency</span><br />
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden" id="about">
+    <div class="sectionTitle">About me: </div>
+      <div class="indent">
+        Hi! My name is <span class="command">Tom Warner</span>.
+        I'm a full-stack software engineer .NET software engineer specializing in high traffic web applications.
+      </div> 
+  </div>
+
+  <div class="hidden" id="experience">
+    <div class="sectionTitle">Experience (highlights): </div>
+    <div class="indent">
+      <span class="title">Senior Software Engineer @ Dealeron, Inc</span> - <span class="command">July 2021 - Present</span>
+      <div class="indent">
+        Making the websites work good. Specifically, on a web content platform that serves up several million requests per hour on a slow day.
+      </div> 
+    </div>
+    <div class="indent">
+      <span class="title">Software Development Engineer 2 @ Amazon</span> - <span class="command">January 2020 - December 2020</span>
+      <div class="indent">
+        To put things diplomatically, I did not derive fulfillment or happiness from this job. But it counts for something that I passed their interview process, I suppose.
+      </div> 
+    </div>
+    <div class="indent">
+      <span class="title">Waterfront Director @ Camp Bowman</span> - <span class="command">2011- 2013 (summers only)</span>
+      <div class="indent">
+        This was the coolest job I've ever had, and possibly the coolest job I ever will. Job duties included teaching children how to sail boats, managing the 14-year-old lifeguards somehow responsible for keeping swimmers safe, and occasionally towing waterskiers.
+      </div> 
+    </div>
+  </div>
+
+  <div class="hidden" id="social">
+    <div class="sectionTitle">(anti-) social media: </div>
+    <div class="indent">
+      <span class="title">Github</span> - <span class="command"><a href="https://github.com/tomwarner13">https://github.com/tomwarner13</a></span>
+    </div>
+    <div class="indent">
+      <span class="title">Blog</span> - <span class="command"><a href="https://biologicalspeculation.blog">https://biologicalspeculation.blog</a></span>
+    </div>
+    <div class="indent">
+      <span class="title">StackOverflow</span> - <span class="command"><a href="https://stackoverflow.com/users/5503076/tom-warner">https://stackoverflow.com/users/5503076/tom-warner</a></span>
+    </div>
+    <div class="indent">
+      <span class="title">LinkedIn</span> - <span class="command"><a href="https://www.linkedin.com/in/thomas-warner-04956867/">https://www.linkedin.com/in/thomas-warner-04956867/</a></span>
+    </div>
+  </div>
+
+  <div class="education hidden" id="education">
+    <div class="sectionTitle">Education: </div>
+    <div class="indent">
+      <span class="title">University of Maryland, College Park</span> <span class="command">2008-2011</span>
+      <div class="indent">
+        Did not complete a business degree. Lack of a business degree has somehow never presented the slightest shadow of an obstacle to my life or career.
+      </div> 
+    </div>
+    <div class="indent">
+      <span class="title">TODO FIND NAME OF DOG PLACE</span> <span class="command">Spring 2022</span>
+      <div class="indent">
+        Worked with the dog to learn basic skills like sit, stay, heel, lie down, etc. No record of the quality of my coursework but the dog was a great student.
+      </div> 
+    </div>
+  </div>
+</body>
+</html>
