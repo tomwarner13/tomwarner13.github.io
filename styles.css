@@ -21,10 +21,11 @@ body {
 }
 
 main {
-  min-height: 715px;
+  min-height: fit-content;
+  max-height: 715px;
+  max-width: 1000px;
   width: 1000px;
-  position: fixed;
-  overflow: hidden;
+  position: relative;
 }
 
 .terminal {
