@@ -1,3 +1,12 @@
+/*
+credits/sources:
+terminal html: https://codepen.io/TristanVenegas/pen/yLrKOew
+terminal effects: https://codepen.io/jcubic/pen/BwBYOZ
+ascii art gen: https://patorjk.com/software/taag
+
+*/
+
+
 const promptInput = document.getElementById('promptInput');
 const terminal = document.getElementById('terminal');
 const terminalWindow = document.getElementById('terminalWindow');
